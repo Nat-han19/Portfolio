@@ -105,18 +105,26 @@ a {
 .projet-a {
     background: center url('images/jump-start.png');
     background-size: cover;
+    height: 100%;
+    object-fit: cover;
 }
 .projet-b {
     background: center url('images/mega-pop.jpg');
     background-size: cover;
+    height: 100%;
+    object-fit: cover;
 }
 .projet-c {
     background: center url('images/pac-man.jpg');
     background-size: cover;
+    height: 100%;
+    object-fit: cover;
 }
 .projet-d {
     background: center url('images/rodeo-pump.jpg');
     background-size: cover;
+    height: 100%;
+    object-fit: cover;
 }
 
 h3 {
