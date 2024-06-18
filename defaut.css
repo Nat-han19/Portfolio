@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto' , sans-serif;
+    min-width: 400px;
+}
+
+#bienvenue {
+    background-color: black;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+header {
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    font-weight: 700;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gauche-presentation {
+    width: 50%;
+}
+.gauche-presentation h1 {
+  font-size: 3em;
+  margin: 0;  
+}
+
+.droite-presentation {
+    width: 50%;
+    text-align: center;
+}
+.droite-presentation img {
+    width: 70%;
+}
+
+#flex-presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 50px) ;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+.texte-presentation {
+    text-align: center;
+}
+
+#projet-grille {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(70px, auto);
+    grid-gap: 15px;
+}
+
+.projet {
+    background: black;
+    border-radius: 5px;
+    color: white;
+    padding: 30px 25px;
+    transition: all .3s;
+    text-shadow: 0 0 15px black;
+}
+.projet:hover {
+    opacity: .7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.projet-a {
+    background: center url('images/jump-start.png');
+    background-size: cover;
+}
+.projet-b {
+    background: center url('images/mega-pop.jpg');
+    background-size: cover;
+}
+.projet-c {
+    background: center url('images/pac-man.jpg');
+    background-size: cover;
+}
+.projet-d {
+    background: center url('images/rodeo-pump.jpg');
+    background-size: cover;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+#contact {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bouton {
+    background:  black;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 15px;
+}
+
+footer { 
+    border-top: 3px solid black;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+#jump-start {
+    background: url('images/points.png'), center url('images/jump-start.png');
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+@media all and (max-width: 1130px) {
+    .container {
+        width: 700px;
+    }
+    #flex-presentation, .texte-presentation {
+        padding: 15px;
+    }
+    #projet-grille {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+}
+
+@media all and (max-width: 730px) {
+    .container {
+        width:100%;
+    }
+    .gauche-presentation{
+        width 100%;
+    }
+}
