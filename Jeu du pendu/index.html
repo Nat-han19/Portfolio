@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <link rel="shotcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="defaut.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le jeu du pendu </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Le pendu </h1>
+            <p class="consigne">Le jeu est simple. Devine le mot secret en proposant des lettres. Une lettre trouvée
+                sera dévoilée dans le mot, à l'inverse, si la lettre ne figure pas dans le mot, alors le dessin du pendu
+                commencera à se dessiner.</p>
+        </div>
+    </header>
+
+    <div id="hangMan">
+        <img src="images/1.png" alt="">
+        <img src="images/2.png" alt="">
+        <img src="images/3.png" alt="">
+        <img src="images/4.png" alt="">
+        <img src="images/5.png" alt="">
+        <img src="images/6.png" alt="">
+        <img src="images/7.png" alt="">
+        <img src="images/8.png" alt="">
+        <img src="images/9.png" alt="">
+        <img src="images/10.png" alt="">
+        <img src="images/11.png" alt="">
+    </div>
+
+    <div id="lucks">
+        <p>Tentatives : <br> <span class="attempts">11</span>/11</p>
+    </div>
+
+    <div id="hiddenText">
+
+    </div>
+
+    <div class="alert">
+
+    </div>
+
+    <ul id="keyboard">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+        <li>I</li>
+        <li>J</li>
+        <li>K</li>
+        <li>L</li>
+        <li>M</li>
+        <li>N</li>
+        <li>O</li>
+        <li>P</li>
+        <li>Q</li>
+        <li>R</li>
+        <li>S</li>
+        <li>T</li>
+        <li>U</li>
+        <li>V</li>
+        <li>W</li>
+        <li>X</li>
+        <li>Y</li>
+        <li>Z</li>
+    </ul>
+
+    <div id="button">
+        <button class="again">REJOUER</button>
+    </div>
+    <div id="buttonWord">
+        <button class="wordAttempt">PROPOSER UN MOT</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

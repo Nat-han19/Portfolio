@@ -1,0 +1,110 @@
+html {
+    margin: 0;
+}
+
+body{
+    margin: 20px;
+    background-color:rgba(133, 161, 255, 0.514);
+
+}
+
+header {
+    margin: 0 130px 0 130px ;
+    background-color: #abcbf5;
+    border: 2px solid #abcbf5;
+    border-radius: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin:0 auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    margin: 0 auto;
+    
+}
+
+.consigne {
+    color: #000000;
+    font-style: italic;
+    border: 2px solid #000000;
+    width: center;
+    text-align:justify;
+    border-radius:5px;
+    -webkit-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0,3);
+    -moz-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0,3);
+    box-shadow: Opx 0px 24px -11px rgba(0,0,0,0,3);
+    padding: 15px;
+    opacity: .5;
+    margin: 45px;
+}
+
+#hangMan{
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin: 20px 500px; 
+}
+#hangMan img {
+    display: none;
+    width: 100%;
+}
+.visible {
+    display: block !important;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 15px;
+    margin: 30px 150px 0 150px;
+}
+
+li {
+    border: 2px solid rgba(133, 161, 255, 0.514);
+    text-align: center;
+    list-style-type: none;
+}
+li:hover {
+    background-color: white;
+}
+
+.active-success {
+    background-color: green;
+    
+}
+.active-error {
+    background-color: red;
+}
+
+#button {
+    padding-top: 20px;
+    display: inline-block;
+    margin-left: 550px;
+}
+#buttonWord {
+    padding-top: 20px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#hiddenText {
+    text-align: center;
+
+}
+#hiddenText span{
+    padding: 5px;
+}
+
+.alert {
+    text-align: center;
+    padding-top: 10px;
+    color: black ;
+    font-weight: bolder;
+}
