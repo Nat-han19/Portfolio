@@ -1,4 +1,4 @@
-name: deploy CRUD-API-BACKEND
+name: deploy CRUD-API-FRONTEND
 
 on:
   push:
