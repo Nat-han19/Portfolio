@@ -1,4 +1,4 @@
-name: deploy queryDBPSQLx
+name: deploy Landingapps
 
 on:
   push:
